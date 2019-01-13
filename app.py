@@ -26,7 +26,7 @@ def handle_my_custom_event(json, methods=['GET', 'POST']):
         json['bot_name'] = '鄉民'
         json['bot_message'] = get_bot_message(json['user_message'], encoder, decoder, searcher, dct)
         now = datetime.datetime.now()
-        json['time'] = now.strftime('%Y年%m月%d日 %H:%M')
+        json['time'] = now.strftime('%Y{y}%m{m}%d{d} %H:%M').format(y='年', m='月', d='日')
         print(str(json))
         emit('my response', json, callback=messageReceived, broadcast=True)
     else:
