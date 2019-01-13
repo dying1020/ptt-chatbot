@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>鄉民機器人</title>
+    <title>鄉民踹共</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -12,7 +12,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ url_for('static', filename='bower_components/font-awesome/css/font-awesome.min.css') }}">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='bower_components/Ionicons/css/ionicons.min.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='bower_components/Ionicons/css/ionicons.min.css') }}"> -->
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/AdminLTE.min.css') }}">
 
@@ -23,12 +23,9 @@
     <!-- Bootstrap 3.3.7 -->
     <script src="{{ url_for('static', filename='bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
     <!-- Slimscroll -->
-    <script src="{{ url_for('static', filename='bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
+    <!-- <script src="{{ url_for('static', filename='bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script> -->
     <!-- AdminLTE App -->
     <script src="{{ url_for('static', filename='dist/js/adminlte.min.js') }}"></script>
-
-    <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
 <style>
@@ -42,7 +39,7 @@
                 <div class="box-header">
                     <i class="fa fa-comments-o"></i>
 
-                    <h3 class="box-title">鄉民機器人</h3>
+                    <h3 class="box-title">鄉民踹共</h3>
 
                     <!-- <div class="box-tools pull-right" data-toggle="tooltip">
                         <a href="" target="_blank" class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></a>
@@ -137,12 +134,12 @@
                 $('html, body').animate({
                     scrollTop: $('div#chat-box').prop('scrollHeight')
                 }, {
-                    duration: 'slow',
-                    start: function() {
-                        user.show('slow')
-                        bot.show('slow')
-                    }
-                })
+                        duration: 'slow',
+                        start: function () {
+                            user.show('slow')
+                            bot.show('slow')
+                        }
+                    })
             } else { // Currently focus on the content, do not scroll the screen
                 user.show('slow')
                 bot.show('slow')
@@ -180,7 +177,7 @@
             window.isMobile = true
         else
             window.isMobile = false
-    
+
     $(function() {
         // Set scrollbar if client is laptop
         if (!window.isMobile) {
