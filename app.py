@@ -7,7 +7,8 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mysecretkey'
 socketio = SocketIO(app)
 
-encoder, decoder, searcher, dct = get_model()
+modelpath = 'model/best.tar'
+encoder, decoder, searcher, dct = get_model(modelpath)
 
 @app.route('/')
 def sessions():

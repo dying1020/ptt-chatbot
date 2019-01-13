@@ -322,22 +322,15 @@ def get_dict():
     return dct
 
 
-def get_model():
+def get_model(loadFilename):
     dct = get_dict()
 
-    # Configure models
-    save_dir = os.path.join("data", "save")
-    corpus_name = 'ptt_title_no_control'
-    model_name = 'cb_model'
     attn_model = 'dot'
     hidden_size = 500
     encoder_n_layers = 2
     decoder_n_layers = 2
     dropout = 0.1
     batch_size = 64
-
-    # Set checkpoint to load from; set to None if starting from scratch
-    loadFilename = 'model/best.tar'
 
     # Load model if a loadFilename is provided
     if loadFilename:
