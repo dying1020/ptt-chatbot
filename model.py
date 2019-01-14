@@ -373,5 +373,5 @@ def get_model(loadFilename):
 
 
 if __name__ == "__main__":
-    encoder, decoder, searcher, dct = get_model()
+    encoder, decoder, searcher, dct = get_model('model/best.tar')
     evaluateInput(encoder, decoder, searcher, dct)
